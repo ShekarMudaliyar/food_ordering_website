@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>OrderOnline Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<link href="css/Order.css" rel="stylesheet" type="text/css"/>
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+	
+        <style>
+            .jumbotron {
+    margin-bottom: 0px;
+    background-image: url(images/fullscreen.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#FF336A;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+	</style>
+	<script>
+$(document).ready(function(){
+	$(".btn-add").click(function(){
+		console.log('clicked');
+	});
+});	
+(function() {
+  const cartBtn = document.querySelectorAll(".btn-add");
+  cartBtn.forEach(function(btn) {
+    btn.addEventListener("click", function(event) {
+      console.dir(event.target);
+    });
+  });
+})();
+	</script>
+    </head>
+    <body>
+   <div>
+      <div class="container-fluid bg" >
+  <div class="page-header">  
+      <h1 style="text-align: center; color: whitesmoke"><b>STREET CHAT CAFE</b></h1> 
+      <h4 style="text-align: center; color:whitesmoke; font-family: verdana"><i>Good Food,Good Mood..</i></h4>
+  </div>         
+ 
+  <div>
+    <nav class="navbar navbar-inverse navbar-fixed" style="color: #FAF7F7">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font-family: Comic Sans MS">STREET CHAT CAFE</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact US</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Menu Card</a></li>
+    </ul>
+  </div>
+    </nav>
+  </div>
+        
+  <div class="jumbotron">
+      <h1>Are You Hungry ??</h1>      
+      <h2 style="font-family: Comic Sans MS "><b>Don't Wait !!</b></h2>
+      <h2 style="font-family: Comic Sans MS"><b>Let's Start to Order Food Now !!</b></h2>
+</div>
+          <div>
+              <hr class="style1">
+    <h2 style="text-align: center; color: black; font-family: Segoe Script; color:white"><b>OUR SPECIALITY...!!</b></h2> 
+    <hr class="style2">
+          </div>
+          
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4"><img src="images/f6.jpg" alt="food1"/>
+    <div class="caption">
+     <div class="pull-center">
+    <h4 style="color:white; text-align:center ;font-family: Segoe Script;">SEVPURI</h4></div>
+     </div>
+     </div>
+    <div class="col-md-4"><img src="images/f1.jpg" alt="food2"/>
+        <div class="caption">
+           <div class="pull-center">
+             <h4 style="color:white; text-align:center;font-family: Segoe Script;">DRY MANCHURIAN</h4></div>
+        </div>
+        </div>
+    <div class="col-md-4"><img src="images/f4.jpg" alt="food3"/>
+        <div class="caption">
+          <div class="pull-center">
+             <h4 style="color:white; text-align:center;font-family: Segoe Script;">FRIED RICE</h4></div>
+        </div>
+       </div>
+      </div>
+      
+      <hr class="style2">
+     
+      <h2 style="color:blue; text-align:center; font-family: Comic Sans MS;">MENU</h2>
+      <hr class="style2">
+      <div class="container">
+          <div class="row" style="color:white">
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="images/o1.jpg" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+        		                    <h4>MACHURIAN</h4>
+        			            <span class="price-new">Rs.120.00</span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<button class="btn-add-1">
+        					<i class="glyphicon glyphicon-shopping-cart"></i>  Add to cart
+					</button>
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+              
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="images/o4.jpg" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+        		                    <h4>VEG THALI</h4>
+        			            <span class="price-new">RS.130.00</span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<p class="btn-add">
+        					<i class="glyphicon glyphicon-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+        				</p>
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+              
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="images/o2.jpg" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+        		                    <h4>SIZZLER</h4>
+        			            <span class="price-new">Rs.180.00</span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<p class="btn-add">
+        					<i class="glyphicon glyphicon-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+        				</p>
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+              
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="images/o3.jpg" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+        		                    <h4>VEG SHEZ FRIED RICE</h4>
+        			            <span class="price-new">Rs.120.00</span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<p class="btn-add">
+        					<i class="glyphicon glyphicon-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+        				</p>
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+           </div>
+          <div class="row" style="color:white">
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="images/o5.jpg" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+                                            <h4>VEG MANCHOU SOUP</h4>
+        			            <span class="price-new">Rs.70.00</span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<p class="btn-add">
+        					<i class="glyphicon glyphicon-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+        				</p>
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+              
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="images/o6.jpg" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+        		                    <h4>NON-VEG THALI </h4>
+        			            <span class="price-new">RS.170.00</span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<p class="btn-add">
+        					<i class="glyphicon glyphicon-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+        				</p>
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+              
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="images/o7.jpg" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+        		                    <h4>PANIPURI</h4>
+        			            <span class="price-new">Rs.30.00</span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<p class="btn-add">
+        					<i class="glyphicon glyphicon-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+        				</p>
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+              
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="images/o8.jpg" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+        		                    <h4>CHOLE BHATURE</h4>
+        			            <span class="price-new">Rs.130.00</span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<p class="btn-add">
+        					<i class="glyphicon glyphicon-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+        				</p>
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+           </div>
+           <div class="row" style="color:white">
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="images/o9.jpg" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+                                            <h4>VEG FRIED RICE</h4>
+        			            <span class="price-new">Rs.120.00</span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<p class="btn-add">
+        					<i class="glyphicon glyphicon-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+        				</p>
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+              
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="images/o10.jpg" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+        		                    <h4>VEG HAKKA NOODLES</h4>
+        			            <span class="price-new">RS.130.00</span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<p class="btn-add">
+        					<i class="glyphicon glyphicon-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+        				</p>
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+              
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="images/o12.jpg" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+        		                    <h4>NON-VEG MOMOS</h4>
+        			            <span class="price-new">Rs.100.00</span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<p class="btn-add">
+        					<i class="glyphicon glyphicon-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+        				</p>
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+              
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="images/o13.jpg" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+        		                    <h4>SEVPURI</h4>
+        			            <span class="price-new">Rs.50.00</span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<p class="btn-add">
+        					<i class="glyphicon glyphicon-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+        				</p>
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+           </div>
+       </div>
+ 
+
+    
+   
+          
+     
+        
+ </div>
+</div>
+     
+    </body>
+</html>
+
+        
+          
+    

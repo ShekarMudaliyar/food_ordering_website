@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Login Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy: default-src 'self'; frame-ancestors 'none'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self'
+      "
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="css/Login.css" rel="stylesheet" type="text/css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid bg">
+      <div class="page-header">
+        <h1 style="text-align: center; color: black">
+          <b>STREET CHAT CAFE</b>
+        </h1>
+        <h4 style="text-align: center; color:black; font-family: verdana">
+          <i>Good Food,Good Mood..</i>
+        </h4>
+      </div>
+      <nav class="navbar navbar-inverse navbar-fixed" style="color: #FAF7F7">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#" style="font-family: Comic Sans MS"
+              >STREET CHAT CAFE</a
+            >
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact US</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/menu">Menu Card</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <form id="loginform" method="POST" action="/authforpay">
+            <div>
+              <h1>Log-in Here</h1>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Username</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="Uname"
+                placeholder="Username"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="pass"
+                name="Cpwd"
+                placeholder="Password"
+              />
+            </div>
+            <div class="checkbox">
+              <label> <input type="checkbox" /> Remember me </label>
+            </div>
+            <div class="form-group">
+              <p>forgot your password? <a href="#">click here</a></p>
+              <p>new user? <a href="/signin">create new account</a></p>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">
+              Log in
+            </button>
+          </form>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+      </div>
+    </div>
+  </body>
+</html>

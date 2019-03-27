@@ -1,0 +1,7 @@
+.bg{background: url('../images/bg6.jpg');background-size: cover}
+
+hr.style1{border-top: 10px double; 
+          color:black}
+
+hr.style2{border-top: 5px solid;
+          color: black}

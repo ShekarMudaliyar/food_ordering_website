@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Us Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/cart.css" rel="stylesheet" type="text/css" />
+    <script src="js/cart.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="container-fluid bg">
+        <div class="page-header">
+          <h1 style="text-align: center; color: white">
+            <b>STREET CHAT CAFE</b>
+          </h1>
+          <h4 style="text-align: center; color:white; font-family: verdana">
+            <i>Good Food,Good Mood..</i>
+          </h4>
+        </div>
+
+        <div>
+          <nav
+            class="navbar navbar-inverse navbar-fixed"
+            style="color: #FAF7F7"
+          >
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a
+                  class="navbar-brand"
+                  href="#"
+                  style="font-family: Comic Sans MS"
+                  >STREET CHAT CAFE</a
+                >
+              </div>
+              <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact US</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/menu">Menu Card</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <h1 style="color:whitesmoke">
+          <span class="glyphicon glyphicon-shopping-cart"></span>Cart
+        </h1>
+        <hr class="style1" />
+        <div class="container" style="color:white">
+          <div class="row">
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>ProductName</th>
+                    <th class="text-center">Price</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="table-body">
+                  <!-- <tr>
+                        <td class="col-sm-8 col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href=""><img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"></a>
+                        </div>  
+                             
+                        <td class="col-sm-1 col-md-1"><div class="media-body">
+                                <h4 class="media-heading"><a href="#">Product name</a></h4>
+                            </div></td>
+                        </td>
+                        <td class="col-sm-1 col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="3">
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>Rs 4.87</strong></td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>Rs 14.61</strong></td>
+                        <td class="col-sm-1 col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-6">
+                        <div class="media">
+                                 <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                        </div>
+                        <td>  <div class="media-body">
+                                <h4 class="media-heading"><a href="#">Product name</a></h4>
+                            </div> </td>   
+                             
+                      
+                        </td>
+                        <td class="col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                        </td>
+                        <td class="col-md-1 text-center"><strong>Rs 4.99</strong></td>
+                        <td class="col-md-1 text-center"><strong>Rs 9.98</strong></td>
+                        <td class="col-md-1">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+                    </tr>
+                    
+
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h3>Total</h3></td>
+                        <td class="text-right"><h3><strong>$31.53</strong></h3></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Subtotal</h5></td>
+                        <td class="text-right"><h5><strong>$24.59</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Estimated shipping</h5></td>
+                        <td class="text-right"><h5><strong>$6.94</strong></h5></td>
+                    </tr>
+                --></tbody>
+              </table>
+              <div id="totalprice"></div>
+              <button onclick="clickbtn()" class="btn btn-primary">
+                Clear
+              </button>
+              <table>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <a href="/order">
+                        <button type="button" class="btn btn-default">
+                          <span
+                            class="glyphicon glyphicon-shopping-cart"
+                          ></span>
+                          Continue Ordering
+                        </button></a
+                      >
+                    </td>
+                    <td>
+                      <!-- <a href="/proceed"> -->
+                      <button
+                        type="button"
+                        class="btn btn-success"
+                        onclick="proceed()"
+                      >
+                        Proceed <span class="glyphicon glyphicon-play"></span>
+                      </button>
+                      <!-- </a> -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

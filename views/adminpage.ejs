@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Admin</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="css/adminCust.css" rel="stylesheet" type="text/css"/>
+        <style>
+            .page-footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+}
+        </style>
+   </head>
+    <body>
+        <div>
+      <div class="container-fluid bg" >
+  <div class="page-header">  
+      <h1 style="text-align: center; color: black"><b>STREET CHAT CAFE</b></h1> 
+      <h4 style="text-align: center; color:black; font-family: verdana"><i>Good Food,Good Mood..</i></h4>
+  </div>         
+ 
+  <div>
+    <nav class="navbar navbar-inverse navbar-fixed" style="color: #FAF7F7">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font-family: Comic Sans MS">STREET CHAT CAFE</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact US</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/menu">Menu Card</a></li>
+    </ul>
+  </div>
+</nav>
+  </div>
+  
+          <div class="container" align="left">
+              <form method="get" action="/adminpage">
+                  <button type="submit" class="btn btn-primary">Fetch all order:</button>
+              </form>
+          </div>
+          <div class="container">
+              <h2><b>Customer Orders:</b></h2>
+              <div class="table-responsive">         
+                  <table class="table">
+                      <thead>
+                          <tr>
+                           <th>No.</th>
+                           <th>Customer Name</th>
+                           <th>Email</th>
+                           <th>Address</th>
+                           <th>Contact No.</th>
+                           <th>Dishes</th>
+                           <th>Total</th>
+                          </tr>
+                     </thead>
+                     <tbody>
+                        <%results.forEach(element=>{%>
+
+                         <tr>
+                         <td><%=element.id%></td>
+                         <td><%=element.name%></td>
+                         <td><%=element.email%></td>
+                         <td><%=element.address%></td>
+                         <td><%=element.cnum%></td>
+                         <td><%=element.items%></td>
+                         <td><%=element.total%></td>
+                         </tr>
+                         <%})%>
+
+                    </tbody>
+                </table>
+              </div>
+         </div>
+
+     <div>
+      <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark"  style="margin-top: 20px;">
+
+    <div style="background-color: #6351ce;">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">STREET CHAT CAFE</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Street Chat Cafe is a restaurant chain in the beautiful city of Pune.
+             We provide hundreds of options of mouth watering dishes to fulfill your hunger and satisfy the food lover within you.</p>
+        </div>
+        <!-- Grid column -->
+
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">SUPPORT US</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">FACEBOOK</a>
+          </p>
+          <p>
+            <a href="#!">INSTAGRAM</a>
+          </p>
+          <p>
+            <a href="#!">TWITTER</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i>Pune Bangalore Highway,
+                                            Opp Balewadi Stadium,
+                                            Near Mitcon College,
+                                            Balewadi,
+                                            Pune-411045.</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> streetchatcafe@gmail.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i>Contact No: 9167914392</p>
+
+        </div>
+        <!-- Grid column -->
+        
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">OWNER</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i>SATYAWAN BANDEKAAR</p>
+          <p>
+                        <a href="/admin">ADMIN</a>
+          <span class="glyphicon glyphicon-user"></span>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> streetchatcafe.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>         
+</div>
+         
+                  
+              </div>
+          </div>
+     
+     
+    </body>
+</html>
+        
+        

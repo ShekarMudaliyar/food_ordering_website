@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>OrderOnline Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<link href="css/Order.css" rel="stylesheet" type="text/css"/>
+	<script src="js/app.js"></script>
+        <style>
+            .jumbotron {
+    margin-bottom: 0px;
+    background-image: url(images/fullscreen.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#FF336A;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+        </style>
+        
+    </head>
+    <body>
+   <div>
+      <div class="container-fluid bg" >
+  <div class="page-header">  
+      <h1 style="text-align: center; color: whitesmoke"><b>STREET CHAT CAFE</b></h1> 
+      <h4 style="text-align: center; color:whitesmoke; font-family: verdana"><i>Good Food,Good Mood..</i></h4>
+  </div>         
+ 
+  <div>
+    <nav class="navbar navbar-inverse navbar-fixed" style="color: #FAF7F7">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font-family: Comic Sans MS">STREET CHAT CAFE</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact US</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li class=><a href="/menu">Menu Card</a></li>
+      <li><a href="/cart">Cart</a></li>
+    </ul>
+  </div>
+    </nav>
+  </div>
+        
+  <div class="jumbotron">
+      <h1>Are You Hungry ??</h1>      
+      <h2 style="font-family: Comic Sans MS "><b>Don't Wait !!</b></h2>
+      <h2 style="font-family: Comic Sans MS"><b>Let's Start to Order Food Now !!</b></h2>
+</div>
+          <div>
+              <hr class="style1">
+    <h2 style="text-align: center; color: black; font-family: Segoe Script; color:white"><b>OUR SPECIALITY...!!</b></h2> 
+    <hr class="style2">
+          </div>
+          
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4"><img src="images/f6.jpg" alt="food1"/>
+    <div class="caption">
+     <div class="pull-center">
+    <h4 style="color:white; text-align:center ;font-family: Segoe Script;">SEVPURI</h4></div>
+     </div>
+     </div>
+    <div class="col-md-4"><img src="images/f1.jpg" alt="food2"/>
+        <div class="caption">
+           <div class="pull-center">
+             <h4 style="color:white; text-align:center;font-family: Segoe Script;">DRY MANCHURIAN</h4></div>
+        </div>
+        </div>
+    <div class="col-md-4"><img src="images/f4.jpg" alt="food3"/>
+        <div class="caption">
+          <div class="pull-center">
+             <h4 style="color:white; text-align:center;font-family: Segoe Script;">FRIED RICE</h4></div>
+        </div>
+       </div>
+      </div>
+      
+      <hr class="style2">
+     
+      <h2 style="color:blue; text-align:center; font-family: Comic Sans MS;">MENU</h2>
+      <hr class="style2">
+      <div class="container">
+	  <div class="row" id="menu" style="color:white">
+		<%data.forEach(function(dish){%>
+              <div class="col-md-3">
+        	<article class="col-item">
+        		<div class="photo">
+        			<a href="#"> <img src="<%=dish.image %>" class="img-responsive" alt="Product Image" /> </a>
+        		</div>
+        		<div class="info">
+        			<div class="row">
+        				<div class="price-details col-md-6">
+        		                    <h4><%=dish.d_name%></h4>
+        			            <span class="price-new">Rs.<%=dish.d_price%></span>
+        				</div>
+                                </div>
+        			<div class="separator clear-left">
+        				<p class="btn-add">
+        					<i class="glyphicon glyphicon-shopping-cart"></i><a class="hidden-sm">Add to cart</a>
+					</p>
+					
+        		        </div>
+        			<div class="clearfix"></div>
+                        </div>
+                </article>
+              </div>
+              <%})%>
+             
+           </div>
+       </div>
+ 
+
+    
+   
+          
+     
+        
+ </div>
+</div>
+     
+    </body>
+</html>
+
+        
+          
+    

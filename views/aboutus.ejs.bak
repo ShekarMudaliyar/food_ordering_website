@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+        <link href="css/AboutUS.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+   <div>
+      <div class="container-fluid bg" >
+  <div class="page-header">  
+      <h1 style="text-align: center; color: black"><b>STREET CHAT CAFE</b></h1> 
+      <h4 style="text-align: center; color:black; font-family: verdana"><i>Good Food,Good Mood..</i></h4>
+  </div>         
+ 
+  <div>
+    <nav class="navbar navbar-inverse navbar-fixed" style="color: #FAF7F7">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font-family: Comic Sans MS">STREET CHAT CAFE</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/">Home</a></li>
+      <li class="active"><a href="/about">About Us</a></li>
+      <li><a href="/contact">Contact US</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/menu">Menu Card</a></li>
+    </ul>
+  </div>
+</nav>
+  </div>     
+ <div>
+   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="8000" style="width:70%; margin: auto; height:460px">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/about1.jpg" style="width:100%">
+    </div>
+
+    <div class="item">
+      <img src="images/about3.jpg" alt="New York" style="width:100%">
+    </div>
+       <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+
+  </div>
+</div>          
+ </div>
+          <br>
+          <hr class="style1">
+    <h2 style="text-align: center; color: black; font-family: Segoe Script; color:white"><b>WELCOME TO OUR RESTAURANT</b></h2> 
+    <hr class="style2">
+    
+    <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+        <h3 style="color: white"><u><b>OUR STORY</b></u></h3>
+      <p style="text-align: justify; font-family:Arial Black; color:white">It all started with an idea of fulfilling the hunger of food lover customers since Janaury 2018.From than till now our restaurant is on an urge of progress.Chinese cuisine have become one of the most loved dishes of our customers.We try to satisfy our customers with our hospitality and mouth watering food to keep them happy and fresh.Walking in and moving out with nothing but memories of good time</p>
+    </div>
+    <div class="col-md-6 left" >
+        <img src="images/size3.jpg" alt="ourstory"/>
+        
+   
+      
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-6 " >
+          <img src="images/food.jpg" alt="food"/>
+      
+    </div>
+    <div class="col-md-6">
+        <h3 style="color:white"><b><u>BEAUTIFUL DISHES</u></b></h3>
+      <p style="text-align: justify; font-family:Arial Black; color:white">Your Hunger, our food makes a tasty combination. with your increasing hunger we are coming up with our new dishes everyday with a new experience with you. Our dishes will never let you return with an empty stomach.Our chefs work together to provide us with tasty,well-balanced meals.A wide range of choices ensures that even picky eaters will find something to eat.Good Food,great service and an awe-inspiring ambience of restaurant are the ingredients to the receipe of a perfect restaurant.</p> 
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+        <h3 style="color:white"><b><u>LOVELY ATMOSPHERE</u></b></h3>
+      <p style="text-align: justify; font-family:Arial Black; color:white"> Chill your mood with our mind refreshing ambience. We serve family style and campus seating for groups at each meal</p>
+  
+      </p>
+    </div>
+    <div class="col-md-6">
+        <img src="images/AMBIENCE.jpg" alt="ambience"/>
+    </div>
+  </div>
+</div>
+    
+ </div>    
+    
+</html>
