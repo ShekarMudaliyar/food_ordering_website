@@ -38,6 +38,7 @@
       <li><a href="/contact">Contact US</a></li>
       <li><a href="/gallery">Gallery</a></li>
       <li><a href="/menu">Menu Card</a></li>
+      <li><a href="/adminlogout">Log Out</a></li>
     </ul>
   </div>
 </nav>
@@ -48,6 +49,11 @@
                   <button type="submit" class="btn btn-primary">Fetch all order:</button>
               </form>
           </div>
+          <div class="container" align="right">
+            <form method="get" action="/clearorder">
+                <button type="submit" class="btn btn-primary">Clear all order</button>
+            </form>
+        </div>
           <div class="container">
               <h2><b>Customer Orders:</b></h2>
               <div class="table-responsive">         
@@ -64,7 +70,8 @@
                           </tr>
                      </thead>
                      <tbody>
-                        <%results.forEach(element=>{%>
+                        <%if(results!=null){
+                        results.forEach(element=>{%>
 
                          <tr>
                          <td><%=element.id%></td>
@@ -75,7 +82,7 @@
                          <td><%=element.items%></td>
                          <td><%=element.total%></td>
                          </tr>
-                         <%})%>
+                         <%})}%>
 
                     </tbody>
                 </table>

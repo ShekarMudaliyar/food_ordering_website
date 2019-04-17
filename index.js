@@ -86,6 +86,7 @@ app.post("/authadmin", urlencodedParser, (req, res) => {
         if (authcred.pass == pass) {
           console.dir(`user exists`);
           console.dir(result);
+          store.set("adminuser", uname);
           res.redirect("/adminpage");
         } else {
           console.dir("email password doesnt not match");
@@ -215,7 +216,11 @@ app.get("/reservation", (req, res) => {
   res.render("reservation");
 });
 app.get("/admin", (req, res) => {
-  res.render("admin");
+  if (store.get("adminuser") == null) {
+    res.render("admin");
+  } else {
+    res.redirect("/adminpage");
+  }
 });
 app.get("/payment", (req, res) => {
   // console.dir(store.get("items"));
@@ -327,14 +332,34 @@ app.get("/success", (req, res) => {
 });
 
 app.get("/adminpage", (req, res) => {
-  let sql = "select * from orders order by id desc";
+  if (store.get("adminuser") == null) {
+    res.redirect("/admin");
+  } else {
+    let sql = "select * from orders order by id desc";
+    let query = db.query(sql, (err, result) => {
+      if (err) {
+        console.dir("some err" + err);
+      } else {
+        // console.log(result);
+        res.render("adminpage", { results: result });
+      }
+    });
+  }
+});
+app.get("/clearorder", (req, res) => {
+  let sql = "TRUNCATE TABLE orders";
   let query = db.query(sql, (err, result) => {
     if (err) {
       console.dir("some err" + err);
     } else {
-      res.render("adminpage", { results: result });
+      res.redirect("/adminpage");
+      // console.log(result);
     }
   });
+});
+app.get("/adminlogout", (req, res) => {
+  store.remove("adminuser");
+  res.redirect("admin");
 });
 app.get("/fpass", (req, res) => {
   res.render("fpass");
@@ -367,14 +392,14 @@ app.post("/getemail", urlencodedParser, (req, res) => {
   var transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: "youremail@gmail.com",
-      pass: "yourpass"
+      user: "sskshekar10@gmail.com",
+      pass: "shanmugham1998"
     }
   });
 
   var mailOptions = {
-    from: "youremail@gmail.com",
-    to: "senderemail@gmail.com",
+    from: "sskshekar10@gmail.com",
+    to: "sskshekar10@outlook.com",
     subject: "Email to reset your Street Caht Cafe Account Password",
     text: "That was easy! => http://localhost:3000/changepass"
   };

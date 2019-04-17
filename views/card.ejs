@@ -89,11 +89,12 @@
               src="https://checkout.stripe.com/checkout.js"
               class="stripe-button"
               data-key="<%=key%>"
-              data-amount="<%=total%>"
+              data-amount="<%=total*100%>"
               data-name="Street Chat Cafe"
               data-description="Food"
               data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
               data-locale="auto"
+              data-currency="INR"
             ></script>
           </form>
         </div>
